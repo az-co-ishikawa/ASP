@@ -1,0 +1,18 @@
+<!--blocks-->
+<!--# setTimeFormat Y/m/d\ G:i:s #-->
+<tr>
+<td style="width:100px;"><!--# value regist #--></td>
+<td style="width:100px;">
+    <!--# value adwares #-->
+</td>
+<td style="text-align:left;">
+<!--# ifbegin equal adwares_type secretAdwares #-->
+    <!--# alias secretAdwares adwares id name #-->
+<!--# else #-->
+    <!--# alias adwares adwares id name  #-->
+<!--# endif #-->
+</td>
+<td style="width:100px; text-align:right;"><!--# code comma (!--# value cost #--) #-->‰~</td>
+<td style="width:100px;"><!--# valueReplace state 2/1 ”FØ/”ñ”FØ #--></td>
+</tr>
+<!--blocks_END-->
