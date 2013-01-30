@@ -1,0 +1,925 @@
+*2013/1/9 14:02:56
+exception : sqlite_query() [<a href='function.sqlite-query'>function.sqlite-query</a>]: no such table: system /home/prom/www/asp/include/extends/ErrorManager.php 35
+*trace
+>>/home/prom/www/asp/index.php,0015 call include_once
+>>/home/prom/www/asp/custom/head_main.php,0081 call getRecord
+	args[0] = object   : Table
+	args[1] = integer  : 0
+>>/home/prom/www/asp/include/extends/SQLiteDatabase.php,0140 call getRecord
+	args[0] = object   : Table
+	args[1] = integer  : 0
+>>/home/prom/www/asp/include/base/SQLDatabase.php,0061 call sql_query
+	args[0] = string   : SELECT * FROM system WHERE ( delete_key = "" OR delete_key IS NULL ) ORDER BY shadow_id
+>>/home/prom/www/asp/include/extends/SQLiteDatabase.php,0062 call sqlite_query
+	args[0] = resource : Resource id #85
+	args[1] = string   : SELECT * FROM system WHERE ( delete_key = "" OR delete_key IS NULL ) ORDER BY shadow_id
+>>/home/prom/www/asp/include/extends/SQLiteDatabase.php,0062 call ErrorManager_ErrorHandler
+	args[0] = integer  : 2
+	args[1] = string   : sqlite_query() [<a href='function.sqlite-query'>function.sqlite-query</a>]: no such table: system
+	args[2] = string   : /home/prom/www/asp/include/extends/SQLiteDatabase.php
+	args[3] = integer  : 62
+	args[4] = array    : 1
+>>/home/prom/www/asp/include/extends/ErrorManager.php,0185 call ErrorHandler
+	args[0] = integer  : 2
+	args[1] = string   : sqlite_query() [<a href='function.sqlite-query'>function.sqlite-query</a>]: no such table: system
+	args[2] = string   : /home/prom/www/asp/include/extends/SQLiteDatabase.php
+	args[3] = integer  : 62
+	args[4] = array    : 1
+
+-----------------------------------------------------
+
+*2013/1/9 14:02:56
+exception : getRecord() : SQL MESSAGE ERROR. 
+ /home/prom/www/asp/include/base/SQLDatabase.php 70
+*trace
+>>/home/prom/www/asp/index.php,0015 call include_once
+	args[0] = object   : Table
+	args[1] = integer  : 0
+>>/home/prom/www/asp/custom/head_main.php,0081 call getRecord
+	args[0] = object   : Table
+	args[1] = integer  : 0
+>>/home/prom/www/asp/include/extends/SQLiteDatabase.php,0140 call getRecord
+	args[0] = object   : Table
+	args[1] = integer  : 0
+
+-----------------------------------------------------
+
+*2013/1/9 14:02:56
+exception : sqlite_query() [<a href='function.sqlite-query'>function.sqlite-query</a>]: no such table: template /home/prom/www/asp/include/extends/ErrorManager.php 35
+*trace
+>>/home/prom/www/asp/index.php,0046 call DrawErrorPage
+	args[0] = string   : RuntimeException
+>>/home/prom/www/asp/include/extends/ExceptionUtil.php,0034 call getHead
+	args[0] = array    : 25
+	args[1] = NULL     : 
+	args[2] = NULL     : 
+>>/home/prom/www/asp/custom/system/System.php,1589 call getTemplateString
+	args[0] = NULL     : 
+	args[1] = NULL     : 
+	args[2] = NULL     : 
+	args[3] = NULL     : 
+	args[4] = string   : 
+	args[5] = string   : HEAD_DESIGN
+>>/home/prom/www/asp/include/Template.php,0067 call getTemplate
+	args[0] = NULL     : 
+	args[1] = NULL     : 
+	args[2] = string   : 
+	args[3] = string   : HEAD_DESIGN
+	args[4] = NULL     : 
+>>/home/prom/www/asp/include/Template.php,0053 call getRow
+	args[0] = object   : Table
+>>/home/prom/www/asp/include/base/SQLDatabase.php,0554 call sql_query
+	args[0] = string   : SELECT COUNT(*) as cnt FROM template WHERE ( delete_key = "" OR delete_key IS NULL ) AND ( label = 'HEAD_DESIGN' and  user_type like '%//%' and  ( target_type is null OR target_type = '' )  and  owner & 2 = 2)
+>>/home/prom/www/asp/include/extends/SQLiteDatabase.php,0062 call sqlite_query
+	args[0] = resource : Resource id #111
+	args[1] = string   : SELECT COUNT(*) as cnt FROM template WHERE ( delete_key = "" OR delete_key IS NULL ) AND ( label = 'HEAD_DESIGN' and  user_type like '%//%' and  ( target_type is null OR target_type = '' )  and  owner & 2 = 2)
+>>/home/prom/www/asp/include/extends/SQLiteDatabase.php,0062 call ErrorManager_ErrorHandler
+	args[0] = integer  : 2
+	args[1] = string   : sqlite_query() [<a href='function.sqlite-query'>function.sqlite-query</a>]: no such table: template
+	args[2] = string   : /home/prom/www/asp/include/extends/SQLiteDatabase.php
+	args[3] = integer  : 62
+	args[4] = array    : 1
+>>/home/prom/www/asp/include/extends/ErrorManager.php,0185 call ErrorHandler
+	args[0] = integer  : 2
+	args[1] = string   : sqlite_query() [<a href='function.sqlite-query'>function.sqlite-query</a>]: no such table: template
+	args[2] = string   : /home/prom/www/asp/include/extends/SQLiteDatabase.php
+	args[3] = integer  : 62
+	args[4] = array    : 1
+
+-----------------------------------------------------
+
+*2013/1/9 14:02:56
+fatal error : Call to a member function getString() on a non-object
+/home/prom/www/asp/include/Template.php,0116
+
+-----------------------------------------------------
+
+*2013/1/9 15:03:07
+exception : sqlite_query() [<a href='function.sqlite-query'>function.sqlite-query</a>]: no such table: system /home/prom/www/asp/include/extends/ErrorManager.php 35
+*trace
+>>/home/prom/www/asp/index.php,0015 call include_once
+>>/home/prom/www/asp/custom/head_main.php,0081 call getRecord
+	args[0] = object   : Table
+	args[1] = integer  : 0
+>>/home/prom/www/asp/include/extends/SQLiteDatabase.php,0140 call getRecord
+	args[0] = object   : Table
+	args[1] = integer  : 0
+>>/home/prom/www/asp/include/base/SQLDatabase.php,0061 call sql_query
+	args[0] = string   : SELECT * FROM system WHERE ( delete_key = "" OR delete_key IS NULL ) ORDER BY shadow_id
+>>/home/prom/www/asp/include/extends/SQLiteDatabase.php,0062 call sqlite_query
+	args[0] = resource : Resource id #85
+	args[1] = string   : SELECT * FROM system WHERE ( delete_key = "" OR delete_key IS NULL ) ORDER BY shadow_id
+>>/home/prom/www/asp/include/extends/SQLiteDatabase.php,0062 call ErrorManager_ErrorHandler
+	args[0] = integer  : 2
+	args[1] = string   : sqlite_query() [<a href='function.sqlite-query'>function.sqlite-query</a>]: no such table: system
+	args[2] = string   : /home/prom/www/asp/include/extends/SQLiteDatabase.php
+	args[3] = integer  : 62
+	args[4] = array    : 1
+>>/home/prom/www/asp/include/extends/ErrorManager.php,0185 call ErrorHandler
+	args[0] = integer  : 2
+	args[1] = string   : sqlite_query() [<a href='function.sqlite-query'>function.sqlite-query</a>]: no such table: system
+	args[2] = string   : /home/prom/www/asp/include/extends/SQLiteDatabase.php
+	args[3] = integer  : 62
+	args[4] = array    : 1
+
+-----------------------------------------------------
+
+*2013/1/9 15:03:07
+exception : getRecord() : SQL MESSAGE ERROR. 
+ /home/prom/www/asp/include/base/SQLDatabase.php 70
+*trace
+>>/home/prom/www/asp/index.php,0015 call include_once
+	args[0] = object   : Table
+	args[1] = integer  : 0
+>>/home/prom/www/asp/custom/head_main.php,0081 call getRecord
+	args[0] = object   : Table
+	args[1] = integer  : 0
+>>/home/prom/www/asp/include/extends/SQLiteDatabase.php,0140 call getRecord
+	args[0] = object   : Table
+	args[1] = integer  : 0
+
+-----------------------------------------------------
+
+*2013/1/9 15:03:07
+exception : sqlite_query() [<a href='function.sqlite-query'>function.sqlite-query</a>]: no such table: template /home/prom/www/asp/include/extends/ErrorManager.php 35
+*trace
+>>/home/prom/www/asp/index.php,0046 call DrawErrorPage
+	args[0] = string   : RuntimeException
+>>/home/prom/www/asp/include/extends/ExceptionUtil.php,0034 call getHead
+	args[0] = array    : 25
+	args[1] = NULL     : 
+	args[2] = NULL     : 
+>>/home/prom/www/asp/custom/system/System.php,1589 call getTemplateString
+	args[0] = NULL     : 
+	args[1] = NULL     : 
+	args[2] = NULL     : 
+	args[3] = NULL     : 
+	args[4] = string   : 
+	args[5] = string   : HEAD_DESIGN
+>>/home/prom/www/asp/include/Template.php,0067 call getTemplate
+	args[0] = NULL     : 
+	args[1] = NULL     : 
+	args[2] = string   : 
+	args[3] = string   : HEAD_DESIGN
+	args[4] = NULL     : 
+>>/home/prom/www/asp/include/Template.php,0053 call getRow
+	args[0] = object   : Table
+>>/home/prom/www/asp/include/base/SQLDatabase.php,0554 call sql_query
+	args[0] = string   : SELECT COUNT(*) as cnt FROM template WHERE ( delete_key = "" OR delete_key IS NULL ) AND ( label = 'HEAD_DESIGN' and  user_type like '%//%' and  ( target_type is null OR target_type = '' )  and  owner & 2 = 2)
+>>/home/prom/www/asp/include/extends/SQLiteDatabase.php,0062 call sqlite_query
+	args[0] = resource : Resource id #111
+	args[1] = string   : SELECT COUNT(*) as cnt FROM template WHERE ( delete_key = "" OR delete_key IS NULL ) AND ( label = 'HEAD_DESIGN' and  user_type like '%//%' and  ( target_type is null OR target_type = '' )  and  owner & 2 = 2)
+>>/home/prom/www/asp/include/extends/SQLiteDatabase.php,0062 call ErrorManager_ErrorHandler
+	args[0] = integer  : 2
+	args[1] = string   : sqlite_query() [<a href='function.sqlite-query'>function.sqlite-query</a>]: no such table: template
+	args[2] = string   : /home/prom/www/asp/include/extends/SQLiteDatabase.php
+	args[3] = integer  : 62
+	args[4] = array    : 1
+>>/home/prom/www/asp/include/extends/ErrorManager.php,0185 call ErrorHandler
+	args[0] = integer  : 2
+	args[1] = string   : sqlite_query() [<a href='function.sqlite-query'>function.sqlite-query</a>]: no such table: template
+	args[2] = string   : /home/prom/www/asp/include/extends/SQLiteDatabase.php
+	args[3] = integer  : 62
+	args[4] = array    : 1
+
+-----------------------------------------------------
+
+*2013/1/9 15:03:07
+fatal error : Call to a member function getString() on a non-object
+/home/prom/www/asp/include/Template.php,0116
+
+-----------------------------------------------------
+
+*2013/1/9 15:03:07
+exception : sqlite_query() [<a href='function.sqlite-query'>function.sqlite-query</a>]: no such table: system /home/prom/www/asp/include/extends/ErrorManager.php 35
+*trace
+>>/home/prom/www/asp/index.php,0015 call include_once
+>>/home/prom/www/asp/custom/head_main.php,0081 call getRecord
+	args[0] = object   : Table
+	args[1] = integer  : 0
+>>/home/prom/www/asp/include/extends/SQLiteDatabase.php,0140 call getRecord
+	args[0] = object   : Table
+	args[1] = integer  : 0
+>>/home/prom/www/asp/include/base/SQLDatabase.php,0061 call sql_query
+	args[0] = string   : SELECT * FROM system WHERE ( delete_key = "" OR delete_key IS NULL ) ORDER BY shadow_id
+>>/home/prom/www/asp/include/extends/SQLiteDatabase.php,0062 call sqlite_query
+	args[0] = resource : Resource id #85
+	args[1] = string   : SELECT * FROM system WHERE ( delete_key = "" OR delete_key IS NULL ) ORDER BY shadow_id
+>>/home/prom/www/asp/include/extends/SQLiteDatabase.php,0062 call ErrorManager_ErrorHandler
+	args[0] = integer  : 2
+	args[1] = string   : sqlite_query() [<a href='function.sqlite-query'>function.sqlite-query</a>]: no such table: system
+	args[2] = string   : /home/prom/www/asp/include/extends/SQLiteDatabase.php
+	args[3] = integer  : 62
+	args[4] = array    : 1
+>>/home/prom/www/asp/include/extends/ErrorManager.php,0185 call ErrorHandler
+	args[0] = integer  : 2
+	args[1] = string   : sqlite_query() [<a href='function.sqlite-query'>function.sqlite-query</a>]: no such table: system
+	args[2] = string   : /home/prom/www/asp/include/extends/SQLiteDatabase.php
+	args[3] = integer  : 62
+	args[4] = array    : 1
+
+-----------------------------------------------------
+
+*2013/1/9 15:03:07
+exception : getRecord() : SQL MESSAGE ERROR. 
+ /home/prom/www/asp/include/base/SQLDatabase.php 70
+*trace
+>>/home/prom/www/asp/index.php,0015 call include_once
+	args[0] = object   : Table
+	args[1] = integer  : 0
+>>/home/prom/www/asp/custom/head_main.php,0081 call getRecord
+	args[0] = object   : Table
+	args[1] = integer  : 0
+>>/home/prom/www/asp/include/extends/SQLiteDatabase.php,0140 call getRecord
+	args[0] = object   : Table
+	args[1] = integer  : 0
+
+-----------------------------------------------------
+
+*2013/1/9 15:03:07
+exception : sqlite_query() [<a href='function.sqlite-query'>function.sqlite-query</a>]: no such table: template /home/prom/www/asp/include/extends/ErrorManager.php 35
+*trace
+>>/home/prom/www/asp/index.php,0046 call DrawErrorPage
+	args[0] = string   : RuntimeException
+>>/home/prom/www/asp/include/extends/ExceptionUtil.php,0034 call getHead
+	args[0] = array    : 25
+	args[1] = NULL     : 
+	args[2] = NULL     : 
+>>/home/prom/www/asp/custom/system/System.php,1589 call getTemplateString
+	args[0] = NULL     : 
+	args[1] = NULL     : 
+	args[2] = NULL     : 
+	args[3] = NULL     : 
+	args[4] = string   : 
+	args[5] = string   : HEAD_DESIGN
+>>/home/prom/www/asp/include/Template.php,0067 call getTemplate
+	args[0] = NULL     : 
+	args[1] = NULL     : 
+	args[2] = string   : 
+	args[3] = string   : HEAD_DESIGN
+	args[4] = NULL     : 
+>>/home/prom/www/asp/include/Template.php,0053 call getRow
+	args[0] = object   : Table
+>>/home/prom/www/asp/include/base/SQLDatabase.php,0554 call sql_query
+	args[0] = string   : SELECT COUNT(*) as cnt FROM template WHERE ( delete_key = "" OR delete_key IS NULL ) AND ( label = 'HEAD_DESIGN' and  user_type like '%//%' and  ( target_type is null OR target_type = '' )  and  owner & 2 = 2)
+>>/home/prom/www/asp/include/extends/SQLiteDatabase.php,0062 call sqlite_query
+	args[0] = resource : Resource id #111
+	args[1] = string   : SELECT COUNT(*) as cnt FROM template WHERE ( delete_key = "" OR delete_key IS NULL ) AND ( label = 'HEAD_DESIGN' and  user_type like '%//%' and  ( target_type is null OR target_type = '' )  and  owner & 2 = 2)
+>>/home/prom/www/asp/include/extends/SQLiteDatabase.php,0062 call ErrorManager_ErrorHandler
+	args[0] = integer  : 2
+	args[1] = string   : sqlite_query() [<a href='function.sqlite-query'>function.sqlite-query</a>]: no such table: template
+	args[2] = string   : /home/prom/www/asp/include/extends/SQLiteDatabase.php
+	args[3] = integer  : 62
+	args[4] = array    : 1
+>>/home/prom/www/asp/include/extends/ErrorManager.php,0185 call ErrorHandler
+	args[0] = integer  : 2
+	args[1] = string   : sqlite_query() [<a href='function.sqlite-query'>function.sqlite-query</a>]: no such table: template
+	args[2] = string   : /home/prom/www/asp/include/extends/SQLiteDatabase.php
+	args[3] = integer  : 62
+	args[4] = array    : 1
+
+-----------------------------------------------------
+
+*2013/1/9 15:03:07
+fatal error : Call to a member function getString() on a non-object
+/home/prom/www/asp/include/Template.php,0116
+
+-----------------------------------------------------
+
+*2013/1/9 15:03:10
+exception : sqlite_query() [<a href='function.sqlite-query'>function.sqlite-query</a>]: near &quot;ALTER&quot;: syntax error /home/prom/www/asp/include/extends/ErrorManager.php 35
+*trace
+>>/home/prom/www/asp/tool.php,0184 call run
+	args[0] = string   : ALTER DATABASE prom_asp DEFAULT CHARACTER SET sjis COLLATE sjis_japanese_ci 
+>>/home/prom/www/asp/tool.php,1189 call sqlite_query
+	args[0] = string   : ALTER DATABASE prom_asp DEFAULT CHARACTER SET sjis COLLATE sjis_japanese_ci 
+	args[1] = resource : Resource id #23
+>>/home/prom/www/asp/tool.php,1189 call ErrorManager_ErrorHandler
+	args[0] = integer  : 2
+	args[1] = string   : sqlite_query() [<a href='function.sqlite-query'>function.sqlite-query</a>]: near &quot;ALTER&quot;: syntax error
+	args[2] = string   : /home/prom/www/asp/tool.php
+	args[3] = integer  : 1189
+	args[4] = array    : 1
+>>/home/prom/www/asp/include/extends/ErrorManager.php,0185 call ErrorHandler
+	args[0] = integer  : 2
+	args[1] = string   : sqlite_query() [<a href='function.sqlite-query'>function.sqlite-query</a>]: near &quot;ALTER&quot;: syntax error
+	args[2] = string   : /home/prom/www/asp/tool.php
+	args[3] = integer  : 1189
+	args[4] = array    : 1
+
+-----------------------------------------------------
+
+*2013/1/9 16:04:39
+exception : Wrong parameter count for explode() /home/prom/www/asp/include/extends/ErrorManager.php 35
+*trace
+>>/home/prom/www/asp/search.php,0082 call searchProc
+	args[0] = array    : 25
+	args[1] = object   : Table
+	args[2] = string   : cUser
+	args[3] = string   : 4
+>>/home/prom/www/asp/custom/system/BasePaySystem.php,0171 call SearchDays
+	args[0] = object   : Table
+	args[1] = NULL     : 
+	args[2] = NULL     : 
+	args[3] = NULL     : 
+	args[4] = NULL     : 
+	args[5] = NULL     : 
+	args[6] = NULL     : 
+>>/home/prom/www/asp/custom/logic/PayLogic.php,0352 call explode
+	args[0] = string   : 2013/1/1
+>>/home/prom/www/asp/custom/logic/PayLogic.php,0352 call ErrorManager_ErrorHandler
+	args[0] = integer  : 2
+	args[1] = string   : Wrong parameter count for explode()
+	args[2] = string   : /home/prom/www/asp/custom/logic/PayLogic.php
+	args[3] = integer  : 352
+	args[4] = array    : 8
+>>/home/prom/www/asp/include/extends/ErrorManager.php,0185 call ErrorHandler
+	args[0] = integer  : 2
+	args[1] = string   : Wrong parameter count for explode()
+	args[2] = string   : /home/prom/www/asp/custom/logic/PayLogic.php
+	args[3] = integer  : 352
+	args[4] = array    : 8
+
+-----------------------------------------------------
+
+*2013/1/9 16:04:40
+exception : Wrong parameter count for explode() /home/prom/www/asp/include/extends/ErrorManager.php 35
+*trace
+>>/home/prom/www/asp/search.php,0082 call searchProc
+	args[0] = array    : 25
+	args[1] = object   : Table
+	args[2] = string   : cUser
+	args[3] = string   : 4
+>>/home/prom/www/asp/custom/system/BasePaySystem.php,0171 call SearchDays
+	args[0] = object   : Table
+	args[1] = NULL     : 
+	args[2] = NULL     : 
+	args[3] = NULL     : 
+	args[4] = NULL     : 
+	args[5] = NULL     : 
+	args[6] = NULL     : 
+>>/home/prom/www/asp/custom/logic/PayLogic.php,0352 call explode
+	args[0] = string   : 2013/1/1
+>>/home/prom/www/asp/custom/logic/PayLogic.php,0352 call ErrorManager_ErrorHandler
+	args[0] = integer  : 2
+	args[1] = string   : Wrong parameter count for explode()
+	args[2] = string   : /home/prom/www/asp/custom/logic/PayLogic.php
+	args[3] = integer  : 352
+	args[4] = array    : 8
+>>/home/prom/www/asp/include/extends/ErrorManager.php,0185 call ErrorHandler
+	args[0] = integer  : 2
+	args[1] = string   : Wrong parameter count for explode()
+	args[2] = string   : /home/prom/www/asp/custom/logic/PayLogic.php
+	args[3] = integer  : 352
+	args[4] = array    : 8
+
+-----------------------------------------------------
+
+*2013/1/9 16:04:40
+exception : Wrong parameter count for explode() /home/prom/www/asp/include/extends/ErrorManager.php 35
+*trace
+>>/home/prom/www/asp/search.php,0082 call searchProc
+	args[0] = array    : 25
+	args[1] = object   : Table
+	args[2] = string   : cUser
+	args[3] = string   : 4
+>>/home/prom/www/asp/custom/system/BasePaySystem.php,0171 call SearchDays
+	args[0] = object   : Table
+	args[1] = NULL     : 
+	args[2] = NULL     : 
+	args[3] = NULL     : 
+	args[4] = NULL     : 
+	args[5] = NULL     : 
+	args[6] = NULL     : 
+>>/home/prom/www/asp/custom/logic/PayLogic.php,0352 call explode
+	args[0] = string   : 2013/1/1
+>>/home/prom/www/asp/custom/logic/PayLogic.php,0352 call ErrorManager_ErrorHandler
+	args[0] = integer  : 2
+	args[1] = string   : Wrong parameter count for explode()
+	args[2] = string   : /home/prom/www/asp/custom/logic/PayLogic.php
+	args[3] = integer  : 352
+	args[4] = array    : 8
+>>/home/prom/www/asp/include/extends/ErrorManager.php,0185 call ErrorHandler
+	args[0] = integer  : 2
+	args[1] = string   : Wrong parameter count for explode()
+	args[2] = string   : /home/prom/www/asp/custom/logic/PayLogic.php
+	args[3] = integer  : 352
+	args[4] = array    : 8
+
+-----------------------------------------------------
+
+*2013/1/15 16:04:16
+exception : Wrong parameter count for explode() /home/prom/www/asp/include/extends/ErrorManager.php 35
+*trace
+>>/home/prom/www/asp/search.php,0082 call searchProc
+	args[0] = array    : 25
+	args[1] = object   : Table
+	args[2] = string   : admin
+	args[3] = string   : 2
+>>/home/prom/www/asp/custom/system/BasePaySystem.php,0171 call SearchDays
+	args[0] = object   : Table
+	args[1] = NULL     : 
+	args[2] = NULL     : 
+	args[3] = NULL     : 
+	args[4] = NULL     : 
+	args[5] = NULL     : 
+	args[6] = NULL     : 
+>>/home/prom/www/asp/custom/logic/PayLogic.php,0352 call explode
+	args[0] = string   : 2013/1/1
+>>/home/prom/www/asp/custom/logic/PayLogic.php,0352 call ErrorManager_ErrorHandler
+	args[0] = integer  : 2
+	args[1] = string   : Wrong parameter count for explode()
+	args[2] = string   : /home/prom/www/asp/custom/logic/PayLogic.php
+	args[3] = integer  : 352
+	args[4] = array    : 8
+>>/home/prom/www/asp/include/extends/ErrorManager.php,0185 call ErrorHandler
+	args[0] = integer  : 2
+	args[1] = string   : Wrong parameter count for explode()
+	args[2] = string   : /home/prom/www/asp/custom/logic/PayLogic.php
+	args[3] = integer  : 352
+	args[4] = array    : 8
+
+-----------------------------------------------------
+
+*2013/1/15 16:04:16
+exception : Wrong parameter count for explode() /home/prom/www/asp/include/extends/ErrorManager.php 35
+*trace
+>>/home/prom/www/asp/search.php,0082 call searchProc
+	args[0] = array    : 25
+	args[1] = object   : Table
+	args[2] = string   : admin
+	args[3] = string   : 2
+>>/home/prom/www/asp/custom/system/BasePaySystem.php,0171 call SearchDays
+	args[0] = object   : Table
+	args[1] = NULL     : 
+	args[2] = NULL     : 
+	args[3] = NULL     : 
+	args[4] = NULL     : 
+	args[5] = NULL     : 
+	args[6] = NULL     : 
+>>/home/prom/www/asp/custom/logic/PayLogic.php,0352 call explode
+	args[0] = string   : 2013/1/1
+>>/home/prom/www/asp/custom/logic/PayLogic.php,0352 call ErrorManager_ErrorHandler
+	args[0] = integer  : 2
+	args[1] = string   : Wrong parameter count for explode()
+	args[2] = string   : /home/prom/www/asp/custom/logic/PayLogic.php
+	args[3] = integer  : 352
+	args[4] = array    : 8
+>>/home/prom/www/asp/include/extends/ErrorManager.php,0185 call ErrorHandler
+	args[0] = integer  : 2
+	args[1] = string   : Wrong parameter count for explode()
+	args[2] = string   : /home/prom/www/asp/custom/logic/PayLogic.php
+	args[3] = integer  : 352
+	args[4] = array    : 8
+
+-----------------------------------------------------
+
+*2013/1/15 16:04:16
+exception : Wrong parameter count for explode() /home/prom/www/asp/include/extends/ErrorManager.php 35
+*trace
+>>/home/prom/www/asp/search.php,0082 call searchProc
+	args[0] = array    : 25
+	args[1] = object   : Table
+	args[2] = string   : admin
+	args[3] = string   : 2
+>>/home/prom/www/asp/custom/system/BasePaySystem.php,0171 call SearchDays
+	args[0] = object   : Table
+	args[1] = NULL     : 
+	args[2] = NULL     : 
+	args[3] = NULL     : 
+	args[4] = NULL     : 
+	args[5] = NULL     : 
+	args[6] = NULL     : 
+>>/home/prom/www/asp/custom/logic/PayLogic.php,0352 call explode
+	args[0] = string   : 2013/1/1
+>>/home/prom/www/asp/custom/logic/PayLogic.php,0352 call ErrorManager_ErrorHandler
+	args[0] = integer  : 2
+	args[1] = string   : Wrong parameter count for explode()
+	args[2] = string   : /home/prom/www/asp/custom/logic/PayLogic.php
+	args[3] = integer  : 352
+	args[4] = array    : 8
+>>/home/prom/www/asp/include/extends/ErrorManager.php,0185 call ErrorHandler
+	args[0] = integer  : 2
+	args[1] = string   : Wrong parameter count for explode()
+	args[2] = string   : /home/prom/www/asp/custom/logic/PayLogic.php
+	args[3] = integer  : 352
+	args[4] = array    : 8
+
+-----------------------------------------------------
+
+*2013/1/21 15:03:06
+fatal error : Interface function DatabaseBase::addRecord() cannot contain body
+/home/prom/www/asp/include/base/Database.php,0137
+
+-----------------------------------------------------
+
+*2013/1/21 15:03:06
+fatal error : Interface function DatabaseBase::addRecord() cannot contain body
+/home/prom/www/asp/include/base/Database.php,0137
+
+-----------------------------------------------------
+
+*2013/1/22 19:07:41
+exception : Wrong parameter count for explode() /home/prom/www/asp/include/extends/ErrorManager.php 35
+*trace
+>>/home/prom/www/asp/search.php,0082 call searchProc
+	args[0] = array    : 25
+	args[1] = object   : Table
+	args[2] = string   : cUser
+	args[3] = string   : 4
+>>/home/prom/www/asp/custom/system/BasePaySystem.php,0171 call SearchDays
+	args[0] = object   : Table
+	args[1] = NULL     : 
+	args[2] = NULL     : 
+	args[3] = NULL     : 
+	args[4] = NULL     : 
+	args[5] = NULL     : 
+	args[6] = NULL     : 
+>>/home/prom/www/asp/custom/logic/PayLogic.php,0352 call explode
+	args[0] = string   : 2013/1/1
+>>/home/prom/www/asp/custom/logic/PayLogic.php,0352 call ErrorManager_ErrorHandler
+	args[0] = integer  : 2
+	args[1] = string   : Wrong parameter count for explode()
+	args[2] = string   : /home/prom/www/asp/custom/logic/PayLogic.php
+	args[3] = integer  : 352
+	args[4] = array    : 8
+>>/home/prom/www/asp/include/extends/ErrorManager.php,0185 call ErrorHandler
+	args[0] = integer  : 2
+	args[1] = string   : Wrong parameter count for explode()
+	args[2] = string   : /home/prom/www/asp/custom/logic/PayLogic.php
+	args[3] = integer  : 352
+	args[4] = array    : 8
+
+-----------------------------------------------------
+
+*2013/1/23 15:03:45
+exception : session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/prom/www/asp/link.php:2) /home/prom/www/asp/include/extends/ErrorManager.php 35
+*trace
+>>/home/prom/www/asp/link.php,0026 call include_once
+>>/home/prom/www/asp/custom/head_main.php,0034 call session_start
+>>/home/prom/www/asp/custom/head_main.php,0034 call ErrorManager_ErrorHandler
+	args[0] = integer  : 2
+	args[1] = string   : session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/prom/www/asp/link.php:2)
+	args[2] = string   : /home/prom/www/asp/custom/head_main.php
+	args[3] = integer  : 34
+	args[4] = array    : 94
+>>/home/prom/www/asp/include/extends/ErrorManager.php,0185 call ErrorHandler
+	args[0] = integer  : 2
+	args[1] = string   : session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/prom/www/asp/link.php:2)
+	args[2] = string   : /home/prom/www/asp/custom/head_main.php
+	args[3] = integer  : 34
+	args[4] = array    : 94
+
+-----------------------------------------------------
+
+*2013/1/23 15:03:45
+exception : Cannot modify header information - headers already sent by (output started at /home/prom/www/asp/link.php:2) /home/prom/www/asp/include/extends/ErrorManager.php 35
+*trace
+>>/home/prom/www/asp/link.php,0038 call AddAccess
+	args[0] = object   : RecordModel
+>>/home/prom/www/asp/link.php,0258 call UpdateCookie
+	args[0] = object   : RecordModel
+	args[1] = string   : b85b1ce1e54557f42ae1568ee57dbfd8
+>>/home/prom/www/asp/link.php,0343 call setcookie
+	args[0] = string   : interval_A0000007
+	args[1] = string   : 1358923548
+	args[2] = integer  : 1361515548
+>>/home/prom/www/asp/link.php,0343 call ErrorManager_ErrorHandler
+	args[0] = integer  : 2
+	args[1] = string   : Cannot modify header information - headers already sent by (output started at /home/prom/www/asp/link.php:2)
+	args[2] = string   : /home/prom/www/asp/link.php
+	args[3] = integer  : 343
+	args[4] = array    : 2
+>>/home/prom/www/asp/include/extends/ErrorManager.php,0185 call ErrorHandler
+	args[0] = integer  : 2
+	args[1] = string   : Cannot modify header information - headers already sent by (output started at /home/prom/www/asp/link.php:2)
+	args[2] = string   : /home/prom/www/asp/link.php
+	args[3] = integer  : 343
+	args[4] = array    : 2
+
+-----------------------------------------------------
+
+*2013/1/23 15:03:45
+exception : Cannot modify header information - headers already sent by (output started at /home/prom/www/asp/link.php:2) /home/prom/www/asp/include/extends/ErrorManager.php 35
+*trace
+>>/home/prom/www/asp/link.php,0038 call AddAccess
+	args[0] = object   : RecordModel
+>>/home/prom/www/asp/link.php,0258 call UpdateCookie
+	args[0] = object   : RecordModel
+	args[1] = string   : b85b1ce1e54557f42ae1568ee57dbfd8
+>>/home/prom/www/asp/link.php,0344 call setcookie
+	args[0] = string   : adwares_cookie
+	args[1] = string   : b85b1ce1e54557f42ae1568ee57dbfd8
+	args[2] = integer  : 1359528348
+>>/home/prom/www/asp/link.php,0344 call ErrorManager_ErrorHandler
+	args[0] = integer  : 2
+	args[1] = string   : Cannot modify header information - headers already sent by (output started at /home/prom/www/asp/link.php:2)
+	args[2] = string   : /home/prom/www/asp/link.php
+	args[3] = integer  : 344
+	args[4] = array    : 2
+>>/home/prom/www/asp/include/extends/ErrorManager.php,0185 call ErrorHandler
+	args[0] = integer  : 2
+	args[1] = string   : Cannot modify header information - headers already sent by (output started at /home/prom/www/asp/link.php:2)
+	args[2] = string   : /home/prom/www/asp/link.php
+	args[3] = integer  : 344
+	args[4] = array    : 2
+
+-----------------------------------------------------
+
+*2013/1/23 15:03:45
+exception : Cannot modify header information - headers already sent by (output started at /home/prom/www/asp/link.php:2) /home/prom/www/asp/include/extends/ErrorManager.php 35
+*trace
+>>/home/prom/www/asp/link.php,0042 call DoRedirect
+	args[0] = object   : RecordModel
+	args[1] = object   : RecordModel
+>>/home/prom/www/asp/link.php,0476 call header
+	args[0] = string   : Location: http://www.google.co.jp?aid=63b63d66735d57387bf16e883142f986
+>>/home/prom/www/asp/link.php,0476 call ErrorManager_ErrorHandler
+	args[0] = integer  : 2
+	args[1] = string   : Cannot modify header information - headers already sent by (output started at /home/prom/www/asp/link.php:2)
+	args[2] = string   : /home/prom/www/asp/link.php
+	args[3] = integer  : 476
+	args[4] = array    : 5
+>>/home/prom/www/asp/include/extends/ErrorManager.php,0185 call ErrorHandler
+	args[0] = integer  : 2
+	args[1] = string   : Cannot modify header information - headers already sent by (output started at /home/prom/www/asp/link.php:2)
+	args[2] = string   : /home/prom/www/asp/link.php
+	args[3] = integer  : 476
+	args[4] = array    : 5
+
+-----------------------------------------------------
+
+*2013/1/23 15:03:45
+exception : session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/prom/www/asp/link.php:2) /home/prom/www/asp/include/extends/ErrorManager.php 35
+*trace
+>>/home/prom/www/asp/link.php,0026 call include_once
+>>/home/prom/www/asp/custom/head_main.php,0034 call session_start
+>>/home/prom/www/asp/custom/head_main.php,0034 call ErrorManager_ErrorHandler
+	args[0] = integer  : 2
+	args[1] = string   : session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/prom/www/asp/link.php:2)
+	args[2] = string   : /home/prom/www/asp/custom/head_main.php
+	args[3] = integer  : 34
+	args[4] = array    : 94
+>>/home/prom/www/asp/include/extends/ErrorManager.php,0185 call ErrorHandler
+	args[0] = integer  : 2
+	args[1] = string   : session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/prom/www/asp/link.php:2)
+	args[2] = string   : /home/prom/www/asp/custom/head_main.php
+	args[3] = integer  : 34
+	args[4] = array    : 94
+
+-----------------------------------------------------
+
+*2013/1/23 15:03:45
+exception : Cannot modify header information - headers already sent by (output started at /home/prom/www/asp/link.php:2) /home/prom/www/asp/include/extends/ErrorManager.php 35
+*trace
+>>/home/prom/www/asp/link.php,0038 call AddAccess
+	args[0] = object   : RecordModel
+>>/home/prom/www/asp/link.php,0258 call UpdateCookie
+	args[0] = object   : RecordModel
+	args[1] = string   : b85b1ce1e54557f42ae1568ee57dbfd8
+>>/home/prom/www/asp/link.php,0343 call setcookie
+	args[0] = string   : interval_A0000007
+	args[1] = string   : 1358923550
+	args[2] = integer  : 1361515550
+>>/home/prom/www/asp/link.php,0343 call ErrorManager_ErrorHandler
+	args[0] = integer  : 2
+	args[1] = string   : Cannot modify header information - headers already sent by (output started at /home/prom/www/asp/link.php:2)
+	args[2] = string   : /home/prom/www/asp/link.php
+	args[3] = integer  : 343
+	args[4] = array    : 2
+>>/home/prom/www/asp/include/extends/ErrorManager.php,0185 call ErrorHandler
+	args[0] = integer  : 2
+	args[1] = string   : Cannot modify header information - headers already sent by (output started at /home/prom/www/asp/link.php:2)
+	args[2] = string   : /home/prom/www/asp/link.php
+	args[3] = integer  : 343
+	args[4] = array    : 2
+
+-----------------------------------------------------
+
+*2013/1/23 15:03:45
+exception : Cannot modify header information - headers already sent by (output started at /home/prom/www/asp/link.php:2) /home/prom/www/asp/include/extends/ErrorManager.php 35
+*trace
+>>/home/prom/www/asp/link.php,0038 call AddAccess
+	args[0] = object   : RecordModel
+>>/home/prom/www/asp/link.php,0258 call UpdateCookie
+	args[0] = object   : RecordModel
+	args[1] = string   : b85b1ce1e54557f42ae1568ee57dbfd8
+>>/home/prom/www/asp/link.php,0344 call setcookie
+	args[0] = string   : adwares_cookie
+	args[1] = string   : b85b1ce1e54557f42ae1568ee57dbfd8
+	args[2] = integer  : 1359528350
+>>/home/prom/www/asp/link.php,0344 call ErrorManager_ErrorHandler
+	args[0] = integer  : 2
+	args[1] = string   : Cannot modify header information - headers already sent by (output started at /home/prom/www/asp/link.php:2)
+	args[2] = string   : /home/prom/www/asp/link.php
+	args[3] = integer  : 344
+	args[4] = array    : 2
+>>/home/prom/www/asp/include/extends/ErrorManager.php,0185 call ErrorHandler
+	args[0] = integer  : 2
+	args[1] = string   : Cannot modify header information - headers already sent by (output started at /home/prom/www/asp/link.php:2)
+	args[2] = string   : /home/prom/www/asp/link.php
+	args[3] = integer  : 344
+	args[4] = array    : 2
+
+-----------------------------------------------------
+
+*2013/1/23 15:03:45
+exception : Cannot modify header information - headers already sent by (output started at /home/prom/www/asp/link.php:2) /home/prom/www/asp/include/extends/ErrorManager.php 35
+*trace
+>>/home/prom/www/asp/link.php,0042 call DoRedirect
+	args[0] = object   : RecordModel
+	args[1] = object   : RecordModel
+>>/home/prom/www/asp/link.php,0476 call header
+	args[0] = string   : Location: http://www.google.co.jp?aid=1e48d54a699c000c345b0d367557e614
+>>/home/prom/www/asp/link.php,0476 call ErrorManager_ErrorHandler
+	args[0] = integer  : 2
+	args[1] = string   : Cannot modify header information - headers already sent by (output started at /home/prom/www/asp/link.php:2)
+	args[2] = string   : /home/prom/www/asp/link.php
+	args[3] = integer  : 476
+	args[4] = array    : 5
+>>/home/prom/www/asp/include/extends/ErrorManager.php,0185 call ErrorHandler
+	args[0] = integer  : 2
+	args[1] = string   : Cannot modify header information - headers already sent by (output started at /home/prom/www/asp/link.php:2)
+	args[2] = string   : /home/prom/www/asp/link.php
+	args[3] = integer  : 476
+	args[4] = array    : 5
+
+-----------------------------------------------------
+
+*2013/1/24 15:03:05
+exception : Wrong parameter count for explode() /home/prom/www/asp/include/extends/ErrorManager.php 35
+*trace
+>>/home/prom/www/asp/search.php,0082 call searchProc
+	args[0] = array    : 25
+	args[1] = object   : Table
+	args[2] = string   : admin
+	args[3] = string   : 2
+>>/home/prom/www/asp/custom/system/BasePaySystem.php,0171 call SearchDays
+	args[0] = object   : Table
+	args[1] = NULL     : 
+	args[2] = NULL     : 
+	args[3] = NULL     : 
+	args[4] = NULL     : 
+	args[5] = NULL     : 
+	args[6] = NULL     : 
+>>/home/prom/www/asp/custom/logic/PayLogic.php,0352 call explode
+	args[0] = string   : 2013/1/1
+>>/home/prom/www/asp/custom/logic/PayLogic.php,0352 call ErrorManager_ErrorHandler
+	args[0] = integer  : 2
+	args[1] = string   : Wrong parameter count for explode()
+	args[2] = string   : /home/prom/www/asp/custom/logic/PayLogic.php
+	args[3] = integer  : 352
+	args[4] = array    : 8
+>>/home/prom/www/asp/include/extends/ErrorManager.php,0185 call ErrorHandler
+	args[0] = integer  : 2
+	args[1] = string   : Wrong parameter count for explode()
+	args[2] = string   : /home/prom/www/asp/custom/logic/PayLogic.php
+	args[3] = integer  : 352
+	args[4] = array    : 8
+
+-----------------------------------------------------
+
+*2013/1/24 15:03:21
+exception : Wrong parameter count for explode() /home/prom/www/asp/include/extends/ErrorManager.php 35
+*trace
+>>/home/prom/www/asp/search.php,0082 call searchProc
+	args[0] = array    : 25
+	args[1] = object   : Table
+	args[2] = string   : admin
+	args[3] = string   : 2
+>>/home/prom/www/asp/custom/system/BasePaySystem.php,0171 call SearchDays
+	args[0] = object   : Table
+	args[1] = NULL     : 
+	args[2] = NULL     : 
+	args[3] = NULL     : 
+	args[4] = NULL     : 
+	args[5] = NULL     : 
+	args[6] = NULL     : 
+>>/home/prom/www/asp/custom/logic/PayLogic.php,0352 call explode
+	args[0] = string   : 2013/1/1
+>>/home/prom/www/asp/custom/logic/PayLogic.php,0352 call ErrorManager_ErrorHandler
+	args[0] = integer  : 2
+	args[1] = string   : Wrong parameter count for explode()
+	args[2] = string   : /home/prom/www/asp/custom/logic/PayLogic.php
+	args[3] = integer  : 352
+	args[4] = array    : 8
+>>/home/prom/www/asp/include/extends/ErrorManager.php,0185 call ErrorHandler
+	args[0] = integer  : 2
+	args[1] = string   : Wrong parameter count for explode()
+	args[2] = string   : /home/prom/www/asp/custom/logic/PayLogic.php
+	args[3] = integer  : 352
+	args[4] = array    : 8
+
+-----------------------------------------------------
+
+*2013/1/24 18:06:18
+fatal error : Call to a member function getData() on a non-object
+/home/prom/www/asp/custom/extension.php,0205
+
+-----------------------------------------------------
+
+*2013/1/24 18:06:19
+fatal error : Call to a member function getData() on a non-object
+/home/prom/www/asp/custom/extension.php,0205
+
+-----------------------------------------------------
+
+*2013/1/24 18:06:19
+fatal error : Call to a member function getData() on a non-object
+/home/prom/www/asp/custom/extension.php,0206
+
+-----------------------------------------------------
+
+*2013/1/24 18:06:21
+fatal error : Cannot redeclare class System
+/home/prom/lib/pear/PEAR/System.php,0060
+
+-----------------------------------------------------
+
+*2013/1/24 18:06:21
+fatal error : Cannot redeclare class System
+/home/prom/lib/pear/PEAR/System.php,0060
+
+-----------------------------------------------------
+
+*2013/1/24 18:06:22
+fatal error : Call to undefined function CheckQuery()
+/home/prom/www/asp/custom/extension.php,0204
+
+-----------------------------------------------------
+
+*2013/1/25 9:09:28
+exception : [adwares] に ID[ A0000007 ]を持つレコードはありません /home/prom/www/asp/custom/model/RecordModel.php 30
+*trace
+>>/home/prom/www/asp/link.php,0031 call GetAdwares
+	args[0] = string   : adwares
+	args[1] = string   : A0000007
+>>/home/prom/www/asp/link.php,0170 call __construct
+	args[0] = string   : adwares
+	args[1] = string   : A0000007
+
+-----------------------------------------------------
+
+*2013/1/25 9:09:29
+exception : Wrong parameter count for explode() /home/prom/www/asp/include/extends/ErrorManager.php 35
+*trace
+>>/home/prom/www/asp/search.php,0082 call searchProc
+	args[0] = array    : 25
+	args[1] = object   : Table
+	args[2] = string   : cUser
+	args[3] = string   : 4
+>>/home/prom/www/asp/custom/system/BasePaySystem.php,0171 call SearchDays
+	args[0] = object   : Table
+	args[1] = NULL     : 
+	args[2] = NULL     : 
+	args[3] = NULL     : 
+	args[4] = NULL     : 
+	args[5] = NULL     : 
+	args[6] = NULL     : 
+>>/home/prom/www/asp/custom/logic/PayLogic.php,0352 call explode
+	args[0] = string   : 2013/1/1
+>>/home/prom/www/asp/custom/logic/PayLogic.php,0352 call ErrorManager_ErrorHandler
+	args[0] = integer  : 2
+	args[1] = string   : Wrong parameter count for explode()
+	args[2] = string   : /home/prom/www/asp/custom/logic/PayLogic.php
+	args[3] = integer  : 352
+	args[4] = array    : 8
+>>/home/prom/www/asp/include/extends/ErrorManager.php,0185 call ErrorHandler
+	args[0] = integer  : 2
+	args[1] = string   : Wrong parameter count for explode()
+	args[2] = string   : /home/prom/www/asp/custom/logic/PayLogic.php
+	args[3] = integer  : 352
+	args[4] = array    : 8
+
+-----------------------------------------------------
+
+*2013/1/25 9:09:34
+exception : [adwares] に ID[ A0000007 ]を持つレコードはありません /home/prom/www/asp/custom/model/RecordModel.php 30
+*trace
+>>/home/prom/www/asp/link.php,0031 call GetAdwares
+	args[0] = string   : adwares
+	args[1] = string   : A0000007
+>>/home/prom/www/asp/link.php,0170 call __construct
+	args[0] = string   : adwares
+	args[1] = string   : A0000007
+
+-----------------------------------------------------
+
+*2013/1/29 12:12:02
+fatal error : Call to a member function getDB() on a non-object
+/home/prom/www/asp/index.php,0021
+
+-----------------------------------------------------
+
+*2013/1/29 15:03:34
+fatal error : Class 'Template' not found
+/home/prom/www/asp/custom/system/System.php,1590
+
+-----------------------------------------------------
+
+*2013/1/29 16:04:07
+fatal error : Class 'Template' not found
+/home/prom/www/asp/custom/system/System.php,1590
+
+-----------------------------------------------------
+

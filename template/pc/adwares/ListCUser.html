@@ -1,0 +1,119 @@
+<!--blocks-->
+<!--# setTimeFormat Y/m/d/\ G:i:s #-->
+
+<div class="as">
+    <div class="adwares_list">
+    <table class="adwares_list_table">	
+        <tr>
+            <th colspan="2" class="list_head">広告ID：<!--# value id #--></th>
+        </tr>
+        <tr>
+        	<th>広告名</th>
+            <td><a href="edit.php?type=adwares&id=(!--# value id #--)"><!--# value name #--></a></td>
+        </tr>
+        <tr>
+            <th width="20%">広告カテゴリー</th>
+            <td><!--# alias category category id name #--></td>
+        </tr>
+        <tr>
+            <th>成果単価</th>
+            <td><!--# ecode getCostType money (!--# value money #--) (!--# value ad_type #--) #--></td>
+        </tr>
+        <tr style="display:none;">
+            <th>クリック報酬</th>
+            <td><!--# value click_money #-->円</td>
+        </tr>
+        <tr style="display:none;">
+            <th>継続課金</th>
+            <td><!--# value continue_money #--><!--# valueReplace continue_type yen/per 円/％ #--></td>
+        </tr>
+<!--# ifbegin ! bool url_users #-->
+        <tr>
+            <th>リダイレクト方式</th>
+            <td>リダイレクトURL</td>
+        </tr>
+        <tr>
+            <th>リダイレクトURL</th>
+            <td style="padding:0;">
+            
+            <table style="padding:0; margin:0; width:100%;" cellspacing="0">
+            <tr style="padding:0; margin:0;">
+                <th style="border-top:0; border-left:0; width:100px;">標準</th>
+                <td style="border-top:0; border-left:0; border-right:0;"><!--# value url #--></td>
+            </tr>
+            <tr>
+                <th style="border-top:0; border-left:0;">docomo</th>
+                <td style="border-top:0; border-left:0; border-right:0;"><!--# value url_docomo #--></td>
+            </tr>
+            <tr>
+                <th style="border-top:0; border-left:0;">au</th>
+                <td style="border-top:0; border-left:0; border-right:0;"><!--# value url_au #--></td>
+            </tr>
+            <tr>
+                <th style="border-top:0; border-left:0;">SoftBank</th>
+                <td style="border-top:0; border-left:0; border-right:0;"><!--# value url_softbank #--></td>
+            </tr>
+            <tr>
+                <th style="border-top:0; border-left:0;">iPhone</th>
+                <td style="border-top:0; border-left:0; border-right:0;"><!--# value url_iphone #--></td>
+            </tr>
+            <tr>
+                <th style="border-top:0; border-left:0;">Android/PC</th>
+                <td style="border-top:0; border-left:0; border-right:0;"><!--# value url_android #--></td>
+            </tr>
+            <tr>
+                <th style="border-top:0; border-left:0;">Android/docomo</th>
+                <td style="border-top:0; border-left:0; border-right:0;"><!--# value url_android_docomo #--></td>
+            </tr>
+            <tr>
+                <th style="border-top:0; border-left:0;">Android/au</th>
+                <td style="border-top:0; border-left:0; border-right:0;"><!--# value url_android_au #--></td>
+            </tr>
+            <tr>
+                <th style="border-top:0; border-bottom:0; border-left:0;">Android/SoftBank</th>
+                <td style="border-top:0; border-bottom:0; border-left:0; border-right:0;"><!--# value url_android_softbank #--></td>
+            </tr>
+            </table>
+            
+            </td>
+        </tr>
+		<!--# ifbegin enableMobile #-->
+        <tr style="display:none;">
+            <th>リダイレクトURL<br />(携帯用)</th>
+            <td style="vertical-align:middle;"><!--# value url_m #--></td>
+        </tr>
+		<!--# endif #-->
+<!--# else #-->
+        <tr>
+            <th>リダイレクト方式</th>
+            <td>アフィリエイターの自由入力</td>
+        </tr>
+<!--# endif #-->
+        <tr>
+        	<th>広告バナー画像</th>
+            <td><div class="ad_image"><!--# object image banner #--></div></td>
+        </tr>
+        <tr>
+        	<th>広告の説明</th>
+            <td class="adwares_info"><!--# value comment #--></td>
+        </tr>
+<!--# ifbegin ! nullcheck continue_money #-->
+        <tr style="display:none;">
+        	<th>個別トラッキングコード</th>
+            <td><textarea class="url">&lt;img src="(!--# ecode getSiteProfile home #--)add.php?check=(!--# ecode getSiteProfile adwares_pass #--)&amp;adwares=(!--# value id #--)" width="1" height="1"&gt;</textarea></td>
+        </tr>
+<!--# else #-->
+        <tr style="display:none;">
+        	<th>継続課金用トラッキングコード</th>
+            <td><textarea class="url">&lt;img src="(!--# ecode getSiteProfile home #--)add.php?check=(!--# ecode getSiteProfile adwares_pass #--)&amp;adwares=(!--# value id #--)&amp;uid=[任意のユニークIDを設定してください]" width="1" height="1"&gt;</textarea></td>
+        </tr>
+        <tr style="display:none;">
+        	<th>継続課金用トラッキングコード(継続)</th>
+            <td><textarea class="url">&lt;img src="(!--# ecode getSiteProfile home #--)continue.php?check=(!--# ecode getSiteProfile adwares_pass #--)&amp;adwares=(!--# value id #--)&amp;uid=[任意のユニークIDを設定してください]" width="1" height="1"&gt;</textarea></td>
+        </tr>
+<!--# endif #-->
+    </table>
+    </div>
+
+</div>
+<!--blocks_END-->
